@@ -86,7 +86,7 @@ Resources:
 
           _debug = os.environ.get('DEBUG', '').lower() == 'true'
 
-          _logger = logging.getLogger('ha-skill')
+          _logger = logging.getLogger('ha-skill-scenes')
           _logger.setLevel(logging.DEBUG if _debug else logging.INFO)
 
           sqs = boto3.resource('sqs')
@@ -250,7 +250,7 @@ Resources:
 
           _debug = os.environ.get('DEBUG').lower() == 'true'
 
-          _logger = logging.getLogger('ha-skill-auth-handler')
+          _logger = logging.getLogger('ha-skill-scenes-auth-handler')
           _logger.setLevel(logging.DEBUG if _debug else logging.INFO)
 
           def handler(event, context):
