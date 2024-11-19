@@ -1,7 +1,7 @@
 name: "HA Skill Scenes"
 description: "Use AWS to send Alexa skill requests to HomeAssistant"
 version: "1.0.7"
-slug: "ha_skill_scebes"
+slug: "ha_skill_scenes"
 init: false
 homeassistant_api: true
 arch:
