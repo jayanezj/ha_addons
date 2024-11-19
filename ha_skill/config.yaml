@@ -1,7 +1,7 @@
-name: "HA Skill"
+name: "HA Skill Scenes"
 description: "Use AWS to send Alexa skill requests to HomeAssistant"
 version: "1.0.7"
-slug: "ha_skill"
+slug: "ha_skill_scebes"
 init: false
 homeassistant_api: true
 arch:
@@ -19,7 +19,7 @@ options:
     - us-west-2
     - eu-west-1
   "Alexa Skill Id": null
-  "CloudFormation Stack Name": HASkill
+  "CloudFormation Stack Name": HASkillScenes
   "Debug": false
 schema:
   "AWS Access Key": str
