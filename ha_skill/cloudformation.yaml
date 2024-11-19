@@ -6,7 +6,7 @@ Parameters:
     Type: String
   HASkillResourcePrefix:
     Type: String
-    Default: ha-skill
+    Default: ha-skill-scenes
   LogRetentionDays:
     Type: Number
     Default: 7
