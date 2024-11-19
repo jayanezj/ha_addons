@@ -15,14 +15,14 @@ logging.basicConfig(
     level=logging.INFO,
     datefmt='%Y-%m-%d %H:%M:%S'
 )
-log = logging.getLogger('ha-skill')
+log = logging.getLogger('ha-skill-scenes')
 
 # Max size is 256KiB (some buffer for MessageAttributes)
 # https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-messages.html
 MAX_MESSAGE_SIZE = 256000
 
 # TODO: read from CloudFormation outputs
-QUEUE_NAME = 'ha-skill-requests.fifo'
+QUEUE_NAME = 'ha-skill-scenes-requests.fifo'
 
 def handle_cloudformation_stack(session, stack_name, stack_params={}):
     log.info('Starting up!')
